@@ -20,6 +20,11 @@
                     $id = $row2[0];
                     $query = mysqli_query($conn, "INSERT INTO `personne` (`idpersonne`, `nom`, `prenom`, `statutsocial`, `idcompte`) VALUES (NULL, '$nom', '$prenom', '$statutsocial', '$id')");
                     $_SESSION['username'] = $username;
+                    $_SESSION['password']=$password;
+                    $_SESSION['email']=$email;
+                    $_SESSION['nom']=$nom;
+                    $_SESSION['prenom']=$prenom;
+                    $_SESSION['statutsocial']=$statutsocial;
                     header("Location:mainMenu.php");
                 }
             }

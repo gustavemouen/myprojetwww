@@ -12,6 +12,8 @@
             
             if($rows==1){
                 $_SESSION['username'] = $username;
+                $_SESSION['password']=$password;
+
                 header("Location:mainMenu.php");
             }
             else {
