@@ -1,12 +1,11 @@
 <?php
     session_start();
     if  ($_SESSION['username']){
-        echo "bienvenue ".$_SESSION['username']."</br><a href='logout.php'>. se deconnecter</a>";
+        echo "bienvenue ".$_SESSION['username']."</br><a class='moi' href='logout.php'>. se deconnecter</a>";
     }
     else {
         header("Location:connexion.php");
     }
-    
 ?>
 </span>
 <!DOCTYPE html>
