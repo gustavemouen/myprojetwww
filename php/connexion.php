@@ -22,6 +22,13 @@
                         <span class='msg'>Warning: Wrong informations!</span>
                         <span class='fas fa-times'></span>
                     </div>
+                    <script>
+                        const close = document.querySelector('.fa-times')
+                        close.addEventListener('click',()=>{
+                            $('.alert').removeClass('show');
+                            $('.alert').addClass('hide');
+                            })
+                    </script>
                 ";
             }
         } else {
@@ -31,6 +38,13 @@
                     <span class='msg'>Warning: Please enter all informations!</span>
                     <span class='fas fa-times'></span>
                 </div>
+                <script>
+                    const close = document.querySelector('.fa-times')
+                    close.addEventListener('click',()=>{
+                        $('.alert').removeClass('show');
+                        $('.alert').addClass('hide');
+                        })
+                </script>
             ";
         }
         

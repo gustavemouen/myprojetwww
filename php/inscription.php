@@ -35,6 +35,13 @@
                     <span class='msg'>Warning: Unavailables informations!</span>
                     <span class='fas fa-times'></span>
                 </div>
+                <script>
+                    const close = document.querySelector('.fa-times')
+                    close.addEventListener('click',()=>{
+                        $('.alert').removeClass('show');
+                        $('.alert').addClass('hide');
+                        })
+                </script>
                 ";
             }
             
@@ -107,7 +114,7 @@
                 <div class="btn">
                     <input class="button1" type="submit" value="S'inscrire" name="submit" id="submit" onclick="valider()">
                     <button class="button2">
-                        <a href="../html_et_php/connexion.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se connecter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="../php/connexion.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se connecter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     </button>
                 </div>
             </form>

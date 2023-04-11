@@ -180,7 +180,22 @@ a{
       background: rgba(129, 10, 10, 0.774);
   }
 }
-
+.alert.hide{
+  animation: show_slide1 1s ease forwards;
+  
+}
+@keyframes show_slide1 {
+  0%{
+      transform: translateY(100%);
+  }
+  50%{
+      transform: translateY(8px);
+  }
+  100%{
+      transform: translateY(-200px);
+      background: rgba(129, 10, 10, 0.774);
+  }
+}
 .alert .fa-exclamation-circle{
   position: absolute;
   left: 15px;
