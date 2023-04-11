@@ -20,7 +20,7 @@ body{
 }
 a{
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.993);
 }
 .form {
     display: flex;
