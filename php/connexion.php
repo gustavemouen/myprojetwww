@@ -3,7 +3,6 @@
     if (isset($_POST["submit"])) {
         $username = $_POST["username"];
         $password = $_POST["password"];
-        $db = new PDO("mysql:host=localhost;dbname=makeyourparty", "root", "");
         if ($username && $password) {
             $conn = mysqli_connect("localhost", "root", "", "gestionfete");
             $password = md5($password);

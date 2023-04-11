@@ -1,7 +1,14 @@
 <?php
     session_start();
     if  ($_SESSION['username']){
-        echo "bienvenue ".$_SESSION['username']."</br><a class='moi' href='logout.php'>. se deconnecter</a>";
+        /*echo 
+            "<nav class='session'>
+                bienvenue ".$_SESSION['username'].
+                "</br>
+                <a class='moi' href='logout.php'>
+                    se deconnecter
+                </a>
+            </nav>";*/
     }
     else {
         header("Location:connexion.php");
@@ -11,6 +18,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +28,26 @@
     <title>Document</title>
 </head>
 <body>
-<span class="yo">
+    <nav>
+        <div class="logo">
+            <h1>MYP</h1>
+        </div>
+        <div class="barre_de_navigation">
+            <ul>
+                <a href="#1">
+                    <li>Nouveautés</li>
+                </a><a href="#2">
+                    <li>vetements</li>
+                </a><a href="#3">
+                    <li>peruques</li>
+                </a><a href="#4">
+                    <li>Contacts</li>
+                </a>
+            </ul>
+        </div>
+        <img class="menuburger" src="../image/menu-btn.png" alt="menu burger">
+    </nav>
+
     <!--
 
     <footer>
@@ -70,5 +99,12 @@
     </footer>
 
     -->
+    <script>
+        const menuHamburger = document.querySelector(".menuburger")
+        const navList = document.querySelector(".barre_de_navigation")
+        const connexion = document.querySelector(".Account1")
+        menuHamburger.addEventListener('click',()=>{
+        navList.classList.toggle('mobile-menu');})
+    </script>
 </body>
 </html>
