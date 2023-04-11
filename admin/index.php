@@ -36,12 +36,15 @@
                 <?php 
                     require 'database.php';
                     $db = Database::connect();
-                    $statement = $db->query("SELECT items.iditem, items.name, items.description, items.price, catgory.name AS category FROM items LEFT JOIN catgory ON items.category = catgory.idcategory ORDER BY items.iditem DESC");
+                    $statement = $db->query("SELECT items.iditem, items.name, items.description, items.price, catgory.name 
+                                             AS category FROM items 
+                                             LEFT JOIN catgory ON items.category = catgory.idcategory 
+                                             ORDER BY items.iditem DESC");
                     while($item = $statement->fetch()){
                         echo"<tr>
                             <td>". $item['name']."</td>
                             <td>". $item['description']."</td>
-                            <td>". $item['price']." $</td>
+                            <td>". number_format((float)$item['price'],2,'. ','')." $</td>
                             <td>". $item['category']."</td>
                             <td width='300px'>
                                 <a href='view.php?id=". $item['iditem']."' class='btn btn-default'>
@@ -56,6 +59,7 @@
                             </td>
                         </tr>";                  
                     }
+                    Database::disconnect();
                 ?>
             </tbody>
         </table>
