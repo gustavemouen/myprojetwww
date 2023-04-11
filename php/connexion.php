@@ -3,7 +3,6 @@
     if (isset($_POST["submit"])) {
         $username = $_POST["username"];
         $password = $_POST["password"];
-        $db = new PDO("mysql:host=localhost;dbname=makeyourparty", "root", "");
         if ($username && $password) {
             $conn = mysqli_connect("localhost", "root", "", "gestionfete");
             $password = md5($password);
@@ -12,7 +11,7 @@
             
             if($rows==1){
                 $_SESSION['username'] = $username;
-                $_SESSION['password']=$password;
+                $_SESSION['password'] = $password;
 
                 header("Location:mainMenu.php");
             }
@@ -35,8 +34,7 @@
             ";
         }
         
-    }
-  
+    } 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,7 +65,7 @@
                 <div class="btn">
                     <input class="button1" type="submit" value="Se connecter" name="submit" id="submit" onclick="valider()">
                     <button class="button2">
-                      <a href="../html_et_php/inscription.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S'inscrire&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                      <a href="../php/inscription.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S'inscrire&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     </button>
                 </div>
                 <button class="button3">Forgot Password</button>
