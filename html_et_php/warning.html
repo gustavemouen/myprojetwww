@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../css/warning.css">
+    <title>warning</title>
+</head>
+<body>
+    <div class="alert">
+        <span class="fas fa-exclamation-circle"></span>
+        <span class="msg">warning: This is a warning!</span>
+        <div class="closebtn">
+            <span class="fas fa-times"></span>
+        </div>
+    </div>
+    <script>
+        $('').click(function(){
+            $('.alert').removeClass('hide');
+            $('.alert').addClass('show');
+        });
+    </script>
+</body>
+</html>

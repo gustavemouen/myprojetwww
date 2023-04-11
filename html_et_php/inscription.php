@@ -29,11 +29,25 @@
                 }
             }
             else {
-                echo "ce pseudo et cette email sont indisponibles";
+                echo "
+                <div class='alert show' >
+                    <span class='fas fa-exclamation-circle'></span>
+                    <span class='msg'>Warning: Unavailables informations!</span>
+                    <span class='fas fa-times'></span>
+                </div>
+                ";
             }
             
         }
-        else echo "entrer des valeurs";
+        else {
+            echo "
+                <div class='alert show' >
+                    <span class='fas fa-exclamation-circle'></span>
+                    <span class='msg'>Warning: Please enter all informations!</span>
+                    <span class='fas fa-times'></span>
+                </div>
+            ";
+        }
     }
   
 ?>
@@ -44,9 +58,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/formulaire.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <title>S'inscrire</title>
 </head>
 <body>
+    
     <div class="card">
         <div class="card2">
             <form class="form" action="inscription.php" method="post">

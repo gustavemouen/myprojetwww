@@ -17,10 +17,22 @@
                 header("Location:mainMenu.php");
             }
             else {
-                echo "vos informations sont invalides";
+                echo "
+                    <div class='alert show' >
+                        <span class='fas fa-exclamation-circle'></span>
+                        <span class='msg'>Warning: Wrong informations!</span>
+                        <span class='fas fa-times'></span>
+                    </div>
+                ";
             }
         } else {
-            echo "Please enter your username and password";
+            echo "
+                <div class='alert show' >
+                    <span class='fas fa-exclamation-circle'></span>
+                    <span class='msg'>Warning: Please enter all informations!</span>
+                    <span class='fas fa-times'></span>
+                </div>
+            ";
         }
         
     }
