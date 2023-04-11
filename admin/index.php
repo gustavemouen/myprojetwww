@@ -17,8 +17,48 @@
     </header>
     <div class="admin">
     <div class="row">
-        <h2><strong>Liste des Items</strong></h2>
-        <a href=""class="btn btn-success btn-lg"></a>
+        <h2><strong>Liste des Items</strong>
+            <a href="insert.php"class="btn btn-success btn-lg">
+                <span class="glyphicon glyphicon-plus"></span> Ajouter
+            </a>
+        </h2>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                    <th>Categorie</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php 
+                    require 'database.php';
+                    $db = Database::connect();
+                    $statement = $db->query("SELECT items.iditem, items.name, items.description, items.price, catgory.name AS category FROM items LEFT JOIN catgory ON items.category = catgory.idcategory ORDER BY items.iditem DESC");
+                    while($item = $statement->fetch()){
+                        echo"<tr>
+                            <td>". $item['name']."</td>
+                            <td>". $item['description']."</td>
+                            <td>". $item['price']." $</td>
+                            <td>". $item['category']."</td>
+                            <td width='300px'>
+                                <a href='view.php?id=". $item['iditem']."' class='btn btn-default'>
+                                    <span class='glyphicon glyphicon-eye-open'></span> voir
+                                </a>
+                                <a href='update.php?id=". $item['iditem']."' class='btn btn-primary'>
+                                    <span class='glyphicon glyphicon-pencil'></span> modifier
+                                </a>
+                                <a href='delete.php?id=". $item['iditem']."' class='btn btn-danger'>
+                                    <span class='glyphicon glyphicon-remove'></span> supprimer
+                                </a>
+                            </td>
+                        </tr>";                  
+                    }
+                ?>
+            </tbody>
+        </table>
     </div>
     </div>
 </body>
