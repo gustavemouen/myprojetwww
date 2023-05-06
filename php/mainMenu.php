@@ -34,19 +34,67 @@
         </div>
         <div class="barre_de_navigation">
             <ul>
-                <a href="#1">
-                    <li>Nouveautés</li>
-                </a><a href="#2">
-                    <li>vetements</li>
-                </a><a href="#3">
-                    <li>peruques</li>
-                </a><a href="#4">
-                    <li>Contacts</li>
+                <a href="#1" data-toggle="tab">
+                    <li role="presentation" class="active">HOMMES</li>
+                </a>
+                <a href="#2" data-toggle="tab">
+                    <li role="presentation">FEMMES</li>
+                </a>
+                <a href="#3" data-toggle="tab">
+                    <li role="presentation">ENFANTS</li>
+                </a>
+                <a href="#4" data-toggle="tab">
+                    <li role="presentation">PRODUITS DE BEAUTE</li>
+                </a>
+                <a href="#4" data-toggle="tab">
+                    <li role="presentation">CONTACT</li>
                 </a>
             </ul>
         </div>
         <img class="menuburger" src="../image/menu-btn.png" alt="menu burger">
     </nav>
+    <div class="tab-content">
+        <div class="tab-pane active" id="1">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                   <div class="thumbnail">
+                        <img src="../image/hacker who is on his laptop feet crossed with a ho.jpg" width="50px" height="50px" alt="...">
+                        <div>5000FCFA</div>
+                        <div class="caption">
+                            <h4>Vetement1</h4>
+                            <p>voici la description du produit</p>
+                            <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                Commader
+                            </a>
+                        </div>
+                   </div> 
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane active" id="2">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                   <div class="thumbnail">
+                        <img src="../image/hacker who is on his dell brand laptop crossed fee.jpg" width="50px" height="50px" alt="...">
+                        <div>5000FCFA</div>
+                        <div class="caption">
+                            <h4>Vetement1</h4>
+                            <p>voici la description du produit</p>
+                            <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                Commader
+                            </a>
+                        </div>
+                   </div> 
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane active" id="3">
+
+        </div>
+        <div class="tab-pane active" id="4">
+
+        </div>
+    </div>
 
     <!--
 
