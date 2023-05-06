@@ -109,6 +109,7 @@
                     <input type="text" class="input-field" id="prenom" name="prenom" placeholder="prenom" autocomplete="off">
                 </div>
                 <div class="field">
+                
                     <input type="text" class="input-field" id="statutsocial" name="statutsocial" placeholder="Statut social" autocomplete="off">
                 </div>
                 <div class="btn">
