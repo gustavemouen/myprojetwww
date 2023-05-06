@@ -20,6 +20,7 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,7 +59,20 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                    <div class="thumbnail">
-                        <img src="../image/hacker who is on his laptop feet crossed with a ho.jpg" width="50px" height="50px" alt="...">
+                        <img src="../image/hacker who is on his laptop feet crossed with a ho.jpg" alt="...">
+                        <div>5000FCFA</div>
+                        <div class="caption">
+                            <h4>Vetement1</h4>
+                            <p>voici la description du produit</p>
+                            <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                Commader
+                            </a>
+                        </div>
+                   </div> 
+                </div>
+                <div class="col-sm-6 col-md-4">
+                   <div class="thumbnail">
+                        <img src="../image/hacker who is on his dell brand laptop crossed fee.jpg" alt="...">
                         <div>5000FCFA</div>
                         <div class="caption">
                             <h4>Vetement1</h4>
@@ -71,11 +85,24 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane active" id="2">
+        <div class="tab-pane" id="2">
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                    <div class="thumbnail">
-                        <img src="../image/hacker who is on his dell brand laptop crossed fee.jpg" width="50px" height="50px" alt="...">
+                        <img src="../image/hacker who is on his laptop feet crossed with a ho.jpg" alt="...">
+                        <div>500000000000000000000000FCFA</div>
+                        <div class="caption">
+                            <h4>Vetement1</h4>
+                            <p>voici la description du produit</p>
+                            <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                Commader
+                            </a>
+                        </div>
+                   </div> 
+                </div>
+                <div class="col-sm-6 col-md-4">
+                   <div class="thumbnail">
+                        <img src="../image/hacker who is on his dell brand laptop crossed fee.jpg" alt="...">
                         <div>5000FCFA</div>
                         <div class="caption">
                             <h4>Vetement1</h4>
@@ -87,12 +114,6 @@
                    </div> 
                 </div>
             </div>
-        </div>
-        <div class="tab-pane active" id="3">
-
-        </div>
-        <div class="tab-pane active" id="4">
-
         </div>
     </div>
 
