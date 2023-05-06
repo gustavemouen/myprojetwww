@@ -42,22 +42,22 @@
                                              ORDER BY items.iditem DESC");
                     while($item = $statement->fetch()){
                         echo"<tr>
-                            <td>". $item['name']."</td>
-                            <td>". $item['description']."</td>
-                            <td>". number_format((float)$item['price'],2,'. ','')." $</td>
-                            <td>". $item['category']."</td>
-                            <td width='300px'>
-                                <a href='view.php?id=". $item['iditem']."' class='btn btn-default'>
-                                    <span class='glyphicon glyphicon-eye-open'></span> voir
-                                </a>
-                                <a href='update.php?id=". $item['iditem']."' class='btn btn-primary'>
-                                    <span class='glyphicon glyphicon-pencil'></span> modifier
-                                </a>
-                                <a href='delete.php?id=". $item['iditem']."' class='btn btn-danger'>
-                                    <span class='glyphicon glyphicon-remove'></span> supprimer
-                                </a>
-                            </td>
-                        </tr>";                  
+                                <td>". $item['name']."</td>
+                                <td>". $item['description']."</td>
+                                <td>". number_format((float)$item['price'],2,'. ','')." $</td>
+                                <td>". $item['category']."</td>
+                                <td width='300px'>
+                                    <a href='view.php?id=". $item['iditem']."' class='btn btn-default'>
+                                        <span class='glyphicon glyphicon-eye-open'></span> voir
+                                    </a>
+                                    <a href='update.php?id=". $item['iditem']."' class='btn btn-primary'>
+                                        <span class='glyphicon glyphicon-pencil'></span> modifier
+                                    </a>
+                                    <a href='delete.php?id=". $item['iditem']."' class='btn btn-danger'>
+                                        <span class='glyphicon glyphicon-remove'></span> supprimer
+                                    </a>
+                                </td>
+                            </tr>";                  
                     }
                     Database::disconnect();
                 ?>
